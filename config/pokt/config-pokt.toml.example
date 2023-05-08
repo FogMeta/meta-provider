@@ -1,0 +1,13 @@
+swan_api_url = "https://go-swan-server.filswan.com"  # Swan API address. For Swan production, it is "https://go-swan-server.filswan.com"
+swan_api_key = ""                                    # Your api key. Acquire from Filswan -> "My Profile"->"Developer Settings". You can also check the Guide.
+swan_access_token=""                                 # Access token of pocket network api
+pokt_log_level="INFO"                         # DEBUG INFO WARN ERROR FATAL
+pokt_api_url="http://127.0.0.1:8081/v1"       # Url of pocket client web api
+pokt_docker_image="filswan/pocket:RC-0.9.2"   # Docker image name and version
+pokt_docker_name="pokt-node-v0.9.2"           # Pocket container name
+pokt_path="/root/.pocket"                     # Pocket chain blocks data path
+pokt_scan_interval=60                         # Pocket scan interval
+pokt_heartbeat_interval=180                   # 600 seconds or 10 minutes
+pokt_server_api_url="http://127.0.0.1:8088/"  # Url of pocket server api
+pokt_server_api_port=8088                     # Port of pocket server api
+pokt_network_type="MAINNET"                   # MAINNET TESTNET

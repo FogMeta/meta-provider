@@ -1,0 +1,10 @@
+[
+    {
+        "id": "0001",
+        "url": "http://localhost:8081/",
+        "basic_auth": {
+            "username": "",
+            "password": ""
+        }
+    }
+]

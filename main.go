@@ -12,6 +12,7 @@ import (
 	"swan-provider/common"
 	"swan-provider/common/constants"
 	"swan-provider/config"
+	"swan-provider/extern/pocket"
 	"swan-provider/routers"
 	"swan-provider/service"
 	"syscall"
@@ -46,6 +47,9 @@ func main() {
 			logs.GetLogger().Warn("received shutdown signal: ", sig)
 			service.StopBoost(service.BoostPid)
 		}
+	case "pocket":
+		pockCmd := os.Args[1:]
+		pocket.ParsePoktCmd(pockCmd)
 	default:
 		printUsage()
 	}
@@ -68,6 +72,7 @@ func printUsage() {
 	fmt.Println("    swan-provider version")
 	fmt.Println("    swan-provider daemon")
 	fmt.Println("    swan-provider set-ask --price=xx --verified-price=xx --min-piece-size=xx --max-piece-size=xx")
+	fmt.Println("    swan-provider pocket")
 }
 
 func createHttpServer() {
