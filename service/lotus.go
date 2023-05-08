@@ -192,6 +192,7 @@ func (lotusService *LotusService) StartScan(swanClient *swan.SwanClient) {
 				UpdateStatusAndLog(deal, ONCHAIN_DEAL_STATUS_ERROR, "can not find from lotus-miner DagStore")
 				continue
 			}
+			deal.ChainDealId = int64(dealId)
 			UpdateSwanDealStatus(minerId, dealId, onChainStatus, *onChainMessage, deal, aria2AutoDeleteCarFile)
 		}
 	} else {
@@ -240,7 +241,7 @@ func (lotusService *LotusService) StartScan(swanClient *swan.SwanClient) {
 				onChainStatus = &dealResp.LegacyDeal.Status
 				message = dealResp.LegacyDeal.Message
 			}
-
+			deal.ChainDealId = int64(dealId)
 			UpdateSwanDealStatus(minerId, dealId, onChainStatus, message, deal, aria2AutoDeleteCarFile)
 		}
 	}
