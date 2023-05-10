@@ -3,7 +3,7 @@ package service
 import (
 	"github.com/filswan/go-swan-lib/client/swan"
 	libmodel "github.com/filswan/go-swan-lib/model"
-	"swan-provider/config"
+	"meta-provider/config"
 )
 
 type SwanService struct {

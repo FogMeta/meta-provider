@@ -2,11 +2,11 @@ package config
 
 import (
 	"fmt"
+	"meta-provider/common/constants"
 	"net/url"
 	"os"
 	"path/filepath"
 	"strings"
-	"swan-provider/common/constants"
 	"time"
 
 	"github.com/BurntSushi/toml"

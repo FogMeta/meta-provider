@@ -3,14 +3,14 @@ package service
 import (
 	"fmt"
 	"github.com/google/uuid"
+	"meta-provider/common/constants"
+	"meta-provider/common/hql"
+	"meta-provider/config"
 	"net/url"
 	"os"
 	"path/filepath"
 	"strconv"
 	"strings"
-	"swan-provider/common/constants"
-	"swan-provider/common/hql"
-	"swan-provider/config"
 	"time"
 
 	"github.com/filswan/go-swan-lib/client"

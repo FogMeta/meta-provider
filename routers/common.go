@@ -1,11 +1,11 @@
 package routers
 
 import (
+	"meta-provider/common"
+	"meta-provider/common/constants"
+	"meta-provider/models"
 	"net/http"
 	"runtime"
-	"swan-provider/common"
-	"swan-provider/common/constants"
-	"swan-provider/models"
 
 	"github.com/gin-gonic/gin"
 )

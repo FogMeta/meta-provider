@@ -18,7 +18,7 @@
 - 等待容器中 pocket node 正常运行，获取pocket版本信息及区块高度。
 
 ```shell
-swan-provider pocket start --passwd "123456"
+meta-provider pocket start --passwd "123456"
 ```
 
 参数：
@@ -31,7 +31,7 @@ swan-provider pocket start --passwd "123456"
 描述: 检查运行中 pocket 的当前版本
 
 ```shell
-swan-provider pocket version
+meta-provider pocket version
 ```
 
 输出:
@@ -46,7 +46,7 @@ Pocket Version  : RC-0.9.2
 描述: 检查运行中 pocket 的当前验证节点账户地址
 
 ```shell
-swan-provider pocket validator
+meta-provider pocket validator
 ```
 
 输出:
@@ -61,7 +61,7 @@ Validator Address       : ee60841d9afb70ba893c02965537bc0eec4ef1e4
 描述: 查看指定账户的余额
 
 ```shell
-swan-provider pocket balance --addr ee60841d9afb70ba893c02965537bc0eec4ef1e4
+meta-provider pocket balance --addr ee60841d9afb70ba893c02965537bc0eec4ef1e4
 ```
 
 参数：
@@ -81,7 +81,7 @@ Balance : 39999970000
 描述: 检查运行中 pocket 节点的状态信息
 
 ```shell
-swan-provider pocket status
+meta-provider pocket status
 ```
 
 输出:
@@ -105,7 +105,7 @@ JailedUntil     : 0001-01-01 00:00:00 +0000 UTC
 描述:设置节点抵押
 
 ```shell
-swan-provider pocket custodial --fromAddr="ee60841d9afb70ba893c02965537bc0eec4ef1e4" --amount="20000000000" --relayChainIDs="0001,0021" --serviceURI="http://pokt.storefrontiers.cn:80" --networkID="testnet" --fee="10000" --isBefore="false" --passwd="123456"
+meta-provider pocket custodial --fromAddr="ee60841d9afb70ba893c02965537bc0eec4ef1e4" --amount="20000000000" --relayChainIDs="0001,0021" --serviceURI="http://pokt.storefrontiers.cn:80" --networkID="testnet" --fee="10000" --isBefore="false" --passwd="123456"
 
 ```
 
@@ -142,7 +142,7 @@ swan-provider pocket custodial --fromAddr="ee60841d9afb70ba893c02965537bc0eec4ef
 描述:设置节点抵押
 
 ```shell
-swan-provider pocket non-custodial --operatorPublicKey="f75e382d77893447b8c01d9a5787f5bf7f4446d8a02e2c6ed07fb02f08b8bb83" --outputAddress="f4daee9cdacdb76f658c571e6301723817bc588a" --amount="20000000000" --relayChainIDs="0001,0021" --serviceURI="http://pokt.storefrontiers.cn:80" --networkID="testnet" --fee="10000" --isBefore="false" --passwd="123456"
+meta-provider pocket non-custodial --operatorPublicKey="f75e382d77893447b8c01d9a5787f5bf7f4446d8a02e2c6ed07fb02f08b8bb83" --outputAddress="f4daee9cdacdb76f658c571e6301723817bc588a" --amount="20000000000" --relayChainIDs="0001,0021" --serviceURI="http://pokt.storefrontiers.cn:80" --networkID="testnet" --fee="10000" --isBefore="false" --passwd="123456"
 ```
 
 参数：

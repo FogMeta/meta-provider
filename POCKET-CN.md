@@ -32,8 +32,8 @@ sudo apt install docker
 ## 安装部署
 ### 从源代码构建安装: 
 ```shell
-git clone https://github.com/filswan/go-swan-provider.git
-cd go-swan-provider
+git clone https://github.com/FogMeta/meta-provider.git
+cd meta-provider
 git checkout release-2.1.0
 ./build_install_pock.sh
 ```
@@ -86,9 +86,9 @@ chmod -R 777 /root/.pocket
 ```
 
 ### 运行
-- 后台运行 `swan-provider`, 其中 `start` 命令参数 `passwd` 初始创建账号的 `Passphrase`
+- 后台运行 `meta-provider`, 其中 `start` 命令参数 `passwd` 初始创建账号的 `Passphrase`
 ```
-nohup ./swan-provider pocket start --passwd 123456 >> provider-pokt.log 2>&1 & 
+nohup ./meta-provider pocket start --passwd 123456 >> provider-pokt.log 2>&1 & 
 ```
 
 ### 充值
@@ -123,8 +123,8 @@ pocket nodes stake non-custodial <operatorPublicKey> <outputAddress> <amount> <R
 
 ## 帮助
 
-如有任何使用问题，请在 [Discord 频道](http://discord.com/invite/KKGhy8ZqzK) 联系 Swan Provider 团队或在Github上创建新的问题.
+如有任何使用问题，请在 [Discord 频道](http://discord.com/invite/KKGhy8ZqzK) 联系 Meta Provider 团队或在Github上创建新的问题.
 
 ## 许可证
 
-[Apache](https://github.com/filswan/go-swan-provider/blob/main/LICENSE)
+[Apache](https://github.com/FogMeta/meta-provider/blob/main/LICENSE)

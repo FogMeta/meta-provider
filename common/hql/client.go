@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 	"github.com/Khan/genqlient/graphql"
+	"meta-provider/common/hql/gen"
 	"net/http"
-	"swan-provider/common/hql/gen"
 )
 
 type Client struct {

@@ -2,7 +2,7 @@
 
 make clean all
 
-BINARY_NAME=swan-provider
+BINARY_NAME=meta-provider
 if [ -f "./build/${BINARY_NAME}" ]; then
     echo "${BINARY_NAME} build success"
     mv ./build/${BINARY_NAME} ./${BINARY_NAME}
