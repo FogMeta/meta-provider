@@ -34,7 +34,7 @@ sudo apt install docker
 ```shell
 git clone https://github.com/FogMeta/meta-provider.git
 cd meta-provider
-git checkout release-2.1.0
+git checkout rpc-provider
 ./build_install_pock.sh
 ```
 
