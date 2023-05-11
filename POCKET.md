@@ -10,7 +10,8 @@
 
 - [Features](#Features)
 - [Prerequisites](#Prerequisites)
-- [Installation and Deployment](#Installation and Deployment)
+- [Installation](#Installation)
+- [Help](#Help)
 - [License](#License)
 
 ## Features
@@ -29,7 +30,7 @@ sudo apt install docker
 ```
 Reference: [Official Installation Documentation](https://docs.docker.com/engine/install/)
 
-## Installation and Deployment
+## Installation
 ### Build and Install from Source Code:
 ```shell
 git clone https://github.com/FogMeta/meta-provider.git
