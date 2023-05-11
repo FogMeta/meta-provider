@@ -3,9 +3,9 @@
 make clean all
 
 BINARY_NAME=meta-provider
-if [ -f "./build/${BINARY_NAME}" ]; then
+if [ -f "./build/swan-provider" ]; then
     echo "${BINARY_NAME} build success"
-    mv ./build/${BINARY_NAME} ./${BINARY_NAME}
+    mv ./build/swan-provider ./${BINARY_NAME}
     chmod +x ./${BINARY_NAME}
 else
   echo "${BINARY_NAME} build failed"
