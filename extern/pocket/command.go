@@ -104,7 +104,7 @@ func getSwanClient() *swan.SwanClient {
 
 	swanClient, err := swan.GetClient(swanApiUrl, swanApiKey, swanAccessToken, "")
 	if err != nil {
-		GetLog().Error("Get Swan Client Error: ", err)
+		GetLog().Error("Get Client Error: ", err)
 	}
 
 	return swanClient
