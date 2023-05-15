@@ -49,8 +49,8 @@ git checkout rpc-provider
 - **pokt_docker_image** The Docker image, for example, `filswan/pocket:RC-0.9.2`.
 - **pokt_docker_name** The container name, which can be defined as desired, for example, `pokt-node-v0.9.2`.
 - **pokt_path** The Pocket data storage path, for example, `/root/.pocket`.
-- **pokt_scan_interval** 600 seconds or 10 minutes. The time interval for scanning Pocket height status.
-- **pokt_heartbeat_interval:** 180 seconds or 3 minutes. The time interval for updating the status on the Swan platform.
+- **pokt_scan_interval** 600 seconds. The time interval for scanning Pocket height status.
+- **pokt_heartbeat_interval:** 180 seconds. The time interval for updating the status on the Swan platform.
 - **pokt_server_api_url** Provider pocket service URL, for example, "http://127.0.0.1:8088/".
 - **pokt_server_api_port** Provider pocket service port, for example, `8088`.
 - **pokt_network_type** Pocket network type, which can be either `MAINNET` or `TESTNET`.

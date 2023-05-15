@@ -49,8 +49,8 @@ git checkout rpc-provider
 - **pokt_docker_image** Docker 镜像，例如 `filswan/pocket:RC-0.9.2`。
 - **pokt_docker_name** 容器名称，可自行定义，例如 `pokt-node-v0.9.2`。
 - **pokt_path** pocket 数据存储路径，例如 `/root/.pocket`。
-- **pokt_scan_interval** 600秒或10分钟。扫描Pocket高度状态的时间间隔。
-- **pokt_heartbeat_interval:** 180秒或3分钟。在Swan平台更新状态的时间间隔。
+- **pokt_scan_interval** 600秒。扫描Pocket高度状态的时间间隔。
+- **pokt_heartbeat_interval:** 180秒。在Swan平台更新状态的时间间隔。
 - **pokt_server_api_url** provider pocket 服务Url，例如 `http://127.0.0.1:8088/`。
 - **pokt_server_api_port** provider pocket 服务Port，例如 `8088`。
 - **pokt_network_type** pocket网络类型，可以是 MAINNET 和 TESTNET 其中之一。
