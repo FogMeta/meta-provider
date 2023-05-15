@@ -36,7 +36,7 @@ sudo apt install docker
 git clone https://github.com/FogMeta/meta-provider.git
 cd meta-provider
 git checkout rpc-provider
-./build_install_pock.sh
+./build_install_pokt.sh
 ```
 
 ### 配置 `config-pokt.toml`
@@ -93,7 +93,7 @@ nohup ./meta-provider pocket start --passwd 123456 >> provider-pokt.log 2>&1 &
 ```
 
 ### 充值
-- 使用命令或钱包，充值高于最低抵押值的 POCK，最低抵押值为15,000 POKT（或15,000,000,000 uPOKT）。
+- 使用命令或钱包，充值高于最低抵押值的 POKT，最低抵押值为15,000 POKT（或15,000,000,000 uPOKT）。
 - 如果正在使用测试网络，可以使用[测试网络水龙头](https://faucet.pokt.network)为账户提供资金。
 
 ### 设置验证节点
@@ -110,7 +110,7 @@ pocket accounts get-validator
 ```
 
 ### 抵押
-- 通过命令抵押 POCK
+- 通过命令抵押 POKT
 ```
 # 进入容器
 docker exec -it  [CONTAINER_ID] /bin/sh
