@@ -152,8 +152,8 @@ Parameters:
 
 - **operatorPublicKey:** The unique valid signer for blocks and relays, corresponding to its public key.
 - **outputAddress:** The destination of the rewards and staked funds.
-- **amount:** Number of uPOKT tokens to stake. Must be higher than the current StakeMinimum value, which can be found here.
-- **relayChainIDs:** List of RelayChain network identifiers separated by commas. Can be found here.
+- **amount:** Number of uPOKT tokens to stake. Must be higher than the current StakeMinimum value.
+- **relayChainIDs:** List of RelayChain network identifiers separated by commas. 
 - **serviceURI:** Service URI used by applications to communicate with Relay Nodes.
 - **networkID:** Pocket chain identifier, can be "mainnet" or "testnet".
 - **fee:** Amount of uPOKT fee required by the network.

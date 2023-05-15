@@ -112,8 +112,8 @@ meta-provider pocket custodial --fromAddr="ee60841d9afb70ba893c02965537bc0eec4ef
 参数：
 
 - **fromAddr：** 欲质押 uPOKT 的地址。
-- **amount：** 要质押的 uPOKT 数量。必须高于 StakeMinimum 当前值，可以在此处找到。
-- **relayChainIDs：** 用逗号分隔的 RelayChain 网络标识符列表。可以在此处找到网络标识符列表。
+- **amount：** 要质押的 uPOKT 数量。必须高于 StakeMinimum 当前值。
+- **relayChainIDs：** 用逗号分隔的 RelayChain 网络标识符列表。
 - **serviceURI：** 应用程序用于与中继节点通信的服务 URI。
 - **networkID：** Pocket 链标识符，可以是 "mainnet" 或 "testnet"。
 - **fee：** 网络所需的 uPOKT 费用。
@@ -149,8 +149,8 @@ meta-provider pocket non-custodial --operatorPublicKey="f75e382d77893447b8c01d9a
 
 - **operatorPublicKey：** OperatorAddress 是块和中继的唯一有效签名者，其对应的公钥。
 - **outputAddress：** outputAddress是奖励和托管资金的目的地。
-- **amount：** 要质押的 uPOKT 数量。必须高于 StakeMinimum 当前值，可以在此处找到。
-- **relayChainIDs：** 用逗号分隔的 RelayChain 网络标识符列表。可以在此处找到网络标识符列表。
+- **amount：** 要质押的 uPOKT 数量。必须高于 StakeMinimum 当前值。
+- **relayChainIDs：** 用逗号分隔的 RelayChain 网络标识符列表。
 - **serviceURI：** 应用程序用于与中继节点通信的服务 URI。
 - **networkID：** Pocket 链标识符，可以是 "mainnet" 或 "testnet"。
 - **fee：** 网络所需的 uPOKT 费用。

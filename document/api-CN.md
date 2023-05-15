@@ -171,8 +171,8 @@ curl --request POST --url http://127.0.0.1:8088/poktsrv/custodial --header 'Cont
 参数：
 
 - **address：** 欲质押 uPOKT 的地址。
-- **amount：** 要质押的 uPOKT 数量。必须高于 StakeMinimum 当前值，可以在此处找到。
-- **relay_chain_ids：** 用逗号分隔的 RelayChain 网络标识符列表。可以在此处找到网络标识符列表。
+- **amount：** 要质押的 uPOKT 数量。必须高于 StakeMinimum 当前值。
+- **relay_chain_ids：** 用逗号分隔的 RelayChain 网络标识符列表。
 - **service_url：** 应用程序用于与中继节点通信的服务 URI。
 - **network_id：** Pocket 链标识符，可以是 "mainnet" 或 "testnet"。
 - **fee：** 网络所需的 uPOKT 费用。
@@ -207,8 +207,8 @@ curl --request POST --url http://127.0.0.1:8088/poktsrv/noncustodial --header 'C
 
 - **public_key：** OperatorAddress 是块和中继的唯一有效签名者，其对应的公钥。
 - **output_addr：** outputAddress是奖励和托管资金的目的地。
-- **amount：** 要质押的 uPOKT 数量。必须高于 StakeMinimum 当前值，可以在此处找到。
-- **relay_chain_ids：** 用逗号分隔的 RelayChain 网络标识符列表。可以在此处找到网络标识符列表。
+- **amount：** 要质押的 uPOKT 数量。必须高于 StakeMinimum 当前值。
+- **relay_chain_ids：** 用逗号分隔的 RelayChain 网络标识符列表。
 - **service_url：** 应用程序用于与中继节点通信的服务 URI。
 - **network_id：** Pocket 链标识符，可以是 "mainnet" 或 "testnet"。
 - **fee：** 网络所需的 uPOKT 费用。

@@ -169,8 +169,8 @@ curl --request POST --url http://127.0.0.1:8088/poktsrv/custodial --header 'Cont
 Parameters:
 
 - **address:** The address to stake uPOKT from.
-- **amount:** The amount of uPOKT to stake. Must be above the current StakeMinimum value which can be found here.
-- **relay_chain_ids:** Comma-separated list of RelayChain network identifiers. Network identifier list can be found here.
+- **amount:** The amount of uPOKT to stake. Must be above the current StakeMinimum value.
+- **relay_chain_ids:** Comma-separated list of RelayChain network identifiers.
 - **service_url:** Service URI that an application uses to communicate with a relay node.
 - **network_id:** Pocket chain identifier which can either be "mainnet" or "testnet".
 - **fee:** The uPOKT fee required by the network.
@@ -204,8 +204,8 @@ Parameters:
 
 - **public_key:** The public key corresponding to the OperatorAddress which is the unique valid signer for blocks and relays.
 - **output_addr:** The destination for rewards and staked funds.
-- **amount:** The amount of uPOKT to stake. Must be above the current StakeMinimum value which can be found here.
-- **relay_chain_ids:** Comma-separated list of RelayChain network identifiers. Network identifier list can be found here.
+- **amount:** The amount of uPOKT to stake. Must be above the current StakeMinimum value.
+- **relay_chain_ids:** Comma-separated list of RelayChain network identifiers. 
 - **service_url:** Service URI that an application uses to communicate with a relay node.
 - **network_id:** Pocket chain identifier which can either be "mainnet" or "testnet".
 - **fee:** The uPOKT fee required by the network.
