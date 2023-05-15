@@ -156,6 +156,7 @@ meta-provider pocket non-custodial --operatorPublicKey="f75e382d77893447b8c01d9a
 - **fee：** 网络所需的 uPOKT 费用。
 - **isBefore：** 指示是否激活了非托管升级，可以是 "true" 或 "false"。
 - **passwd：** OperatorAddress 账户对应的 Passphrase。
+
 输出:
 
 ```shell
