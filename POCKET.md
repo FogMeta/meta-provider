@@ -93,7 +93,7 @@ nohup ./meta-provider pocket start --passwd 123456 >> provider-pokt.log 2>&1 &
 ```
 
 ### Deposit
-- Deposit POCK tokens using a command or wallet. The minimum staking requirement is 15,000 POKT (or 15,000,000,000 uPOKT).
+- Deposit POKT tokens using a command or wallet. The minimum staking requirement is 15,000 POKT (or 15,000,000,000 uPOKT).
 - You can use the test network [faucet](https://faucet.pokt.network) to fund your account if you're using the test network.
 
 ### Set Validator Node Address
@@ -110,7 +110,7 @@ pocket accounts get-validator
 ```
 
 ### Stake
-- Stake your POCK tokens using the stake command. There are custodial and non-custodial staking options available.
+- Stake your POKT tokens using the stake command. There are custodial and non-custodial staking options available.
 ```
 # Enter the container
 docker exec -it  [CONTAINER_ID] /bin/sh
