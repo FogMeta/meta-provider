@@ -36,7 +36,7 @@ Reference: [Official Installation Documentation](https://docs.docker.com/engine/
 git clone https://github.com/FogMeta/meta-provider.git
 cd meta-provider
 git checkout rpc-provider
-./build_install_pock.sh
+./build_install_pokt.sh
 ```
 
 ### Configure `config-pokt.toml`
