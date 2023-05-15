@@ -1,23 +1,24 @@
 # RPC Provider Guideline API
 
-* [Version](#version)
-* [Height](#height)
-* [Account Balance](#account-balance)
-* [Status Information](#status-information)
-* [Set Validator Node](#set-validator-node)
-* [View Validator Node](#view-validator-node)
-* [Custodial Staking](#custodial-staking)
-* [Non-Custodial Staking](#non-custodial-staking)
+* [版本](#版本)
+* [高度](#高度)
+* [账户余额](#账户余额)
+* [状态信息](#状态信息)
+* [设置验证节点](#设置验证节点)
+* [查看验证节点](#查看验证节点)
+* [Custodial抵押](#Custodial抵押)
+* [Non-Custodial抵押](#Non-Custodial抵押)
 
-## Version
 
-Description: Check the current version of running Pocket.
+## 版本
+
+描述: 检查运行中 pocket 的当前版本
 
 ```shell
 curl --url http://127.0.0.1:8088/poktsrv/version 
 ```
 
-Output:
+输出:
 
 ```shell
 {
@@ -30,15 +31,15 @@ Output:
 ```
 
 
-## Height
+## 高度
 
-Description: Check the current block height of running Pocket.
+描述: 检查运行中 pocket 的当前区块高度
 
 ```shell
 curl --url http://127.0.0.1:8088/poktsrv/height
 ```
 
-Output:
+输出:
 
 ```shell
 {
@@ -51,21 +52,22 @@ Output:
 ```
 
 
-## Account Balance
+## 账户余额
 
-Description: Query the balance of a specified account.
+描述:查询指定账号的余额
 
 ```shell
 curl --request POST --url http://127.0.0.1:8088/poktsrv/balance --header 'Content-Type: application/json' \
 --data "{\"height\": 0,\"address\":\"ee60841d9afb70ba893c02965537bc0eec4ef1e4\"}"
 ```
 
-Parameters:
+参数：
 
-- **height:** The specified height of the block to query. Defaults to 0, which will query the latest known block by the node.
-- **address:** The target address.
+- **height：** 要查询的区块的指定高度。默认为0，这将查询当前节点已知的最新块。
+- **address：** 目标地址。
 
-Output:
+
+输出:
 
 ```shell
 {
@@ -80,15 +82,15 @@ Output:
 ```
 
 
-## Status Information
+## 状态信息
 
-Description: Check the status information of running Pocket.
+描述:检查运行中 pocket 的状态信息
 
 ```shell
 curl --url http://127.0.0.1:8088/poktsrv/status
 ```
 
-Output:
+输出:
 
 ```shell
 {
@@ -111,21 +113,21 @@ Output:
 ```
 
 
-## Set Validator Node
+## 设置验证节点
 
-Description: Set up a validator node account for running Pocket
+描述:设置运行中 pocket 的验证节点账户
 
 ```shell
 curl --request POST --url http://127.0.0.1:8088/poktsrv/set-validator --header 'Content-Type: application/json' \
 --data "{\"address\":\"ee60841d9afb70ba893c02965537bc0eec4ef1e4\",\"passwd\": \"123456\"}"
 ```
 
-Parameters:
+参数：
 
-- **address:** The target address.
-- **passwd:** Passphrase corresponding to the address.
+- **address：** 目标地址。
+- **passwd：** address 对应的 Passphrase。
 
-Output:
+输出:
 
 ```shell
 {
@@ -138,15 +140,15 @@ Output:
 ```
 
 
-## View Validator Node
+## 查看验证节点
 
-Description: View current validator node account information
+描述:查看当前验证节点账户信息
 
 ```shell
 curl --url http://127.0.0.1:8088/poktsrv/validator
 ```
 
-Output:
+输出:
 
 ```shell
 {
@@ -157,27 +159,28 @@ Output:
 ```
 
 
-## Custodial Staking
+## Custodial抵押
 
-Description: Set up node staking
+描述:设置节点抵押
 
 ```shell
 curl --request POST --url http://127.0.0.1:8088/poktsrv/custodial --header 'Content-Type: application/json' \
 --data "{\"address\":\"ee60841d9afb70ba893c02965537bc0eec4ef1e4\",\"amount\": \"20000000000\",\"relay_chain_ids\": \"0001,0021\",\"service_url\": \"http://pokt.storefrontiers.cn:80\",\"network_id\": \"testnet\",\"fee\": \"10000\",\"is_before\": \"false\",\"passwd\": \"123456\"}"
 ```
 
-Parameters:
+参数：
 
-- **address:** The address to stake uPOKT from.
-- **amount:** The amount of uPOKT to stake. Must be above the current StakeMinimum value which can be found here.
-- **relay_chain_ids:** Comma-separated list of RelayChain network identifiers. Network identifier list can be found here.
-- **service_url:** Service URI that an application uses to communicate with a relay node.
-- **network_id:** Pocket chain identifier which can either be "mainnet" or "testnet".
-- **fee:** The uPOKT fee required by the network.
-- **is_before:** Indicates whether non-custodial upgrade has been activated and can be either "true" or "false".
-- **passwd:** Passphrase of the fromAddr account.
+- **address：** 欲质押 uPOKT 的地址。
+- **amount：** 要质押的 uPOKT 数量。必须高于 StakeMinimum 当前值，可以在此处找到。
+- **relay_chain_ids：** 用逗号分隔的 RelayChain 网络标识符列表。可以在此处找到网络标识符列表。
+- **service_url：** 应用程序用于与中继节点通信的服务 URI。
+- **network_id：** Pocket 链标识符，可以是 "mainnet" 或 "testnet"。
+- **fee：** 网络所需的 uPOKT 费用。
+- **is_before：** 指示是否激活了非托管升级，可以是 "true" 或 "false"。
+- **passwd：** fromAddr 账户对应的 Passphrase。
 
-Output:
+
+输出:
 
 ```shell
 {
@@ -191,28 +194,28 @@ Output:
 
 
 
-## Non-Custodial Staking
+## Non-Custodial抵押
 
-Description: Set up node staking
+描述:设置节点抵押
 
 ```shell
 curl --request POST --url http://127.0.0.1:8088/poktsrv/noncustodial --header 'Content-Type: application/json' \
 --data "{\"public_key\":\"f75e382d77893447b8c01d9a5787f5bf7f4446d8a02e2c6ed07fb02f08b8bb83\",\"output_addr\":\"f4daee9cdacdb76f658c571e6301723817bc588a\",\"amount\": \"15100000000\",\"relay_chain_ids\": \"0001,0021\",\"service_url\": \"http://pokt.storefrontiers.cn:80\",\"network_id\": \"testnet\",\"fee\": \"10000\",\"is_before\": \"false\",\"passwd\": \"123456\"}"
 ```
 
-Parameters:
+参数：
 
-- **public_key:** The public key corresponding to the OperatorAddress which is the unique valid signer for blocks and relays.
-- **output_addr:** The destination for rewards and staked funds.
-- **amount:** The amount of uPOKT to stake. Must be above the current StakeMinimum value which can be found here.
-- **relay_chain_ids:** Comma-separated list of RelayChain network identifiers. Network identifier list can be found here.
-- **service_url:** Service URI that an application uses to communicate with a relay node.
-- **network_id:** Pocket chain identifier which can either be "mainnet" or "testnet".
-- **fee:** The uPOKT fee required by the network.
-- **is_before:** Indicates whether non-custodial upgrade has been activated and can be either "true" or "false".
-- **passwd:** Passphrase of the OperatorAddress account.
+- **public_key：** OperatorAddress 是块和中继的唯一有效签名者，其对应的公钥。
+- **output_addr：** outputAddress是奖励和托管资金的目的地。
+- **amount：** 要质押的 uPOKT 数量。必须高于 StakeMinimum 当前值，可以在此处找到。
+- **relay_chain_ids：** 用逗号分隔的 RelayChain 网络标识符列表。可以在此处找到网络标识符列表。
+- **service_url：** 应用程序用于与中继节点通信的服务 URI。
+- **network_id：** Pocket 链标识符，可以是 "mainnet" 或 "testnet"。
+- **fee：** 网络所需的 uPOKT 费用。
+- **is_before：** 指示是否激活了非托管升级，可以是 "true" 或 "false"。
+- **passwd：** OperatorAddress 账户对应的 Passphrase。
 
-Output:
+输出:
 
 ```shell
 {
